@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PomodoroFocus — Support</title>
+  <meta name="description" content="Official support page for PomodoroFocus — a simple, focused Pomodoro timer." />
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/pomodorofocus-support/" />
+  <style>
+    :root { --pad: 22px; --radius: 14px; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: var(--pad); line-height: 1.55; max-width: 860px; }
+    header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+    .logo { width: 48px; height: 48px; border-radius: 12px; border: 1px solid #eee; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
+    .muted { color: #666; }
+    .card { border: 1px solid #e5e5e5; border-radius: var(--radius); padding: 16px 18px; margin: 16px 0; }
+    a { text-decoration: none; }
+    footer { margin-top: 24px; font-size: 0.95rem; color: #666; }
+    code { background: #fafafa; border: 1px solid #eee; padding: 0 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" aria-hidden="true">⏱️</div>
+    <div>
+      <h1 style="margin:0;">PomodoroFocus — Support</h1>
+      <div class="muted">Version: 1.0 • Platform: iOS</div>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:support@pomodorofocus.app">support@pomodorofocus.app</a>.</p>
+    <p>Response target: within 2–3 business days.</p>
+  </section>
+
+  <section class="card">
+    <h2>FAQ</h2>
+    <p><strong>How do I report a bug?</strong><br>
+      In the app, go to Settings → “Send Feedback,” or email us with steps to reproduce and your iOS version.</p>
+    <p><strong>Does PomodoroFocus work offline?</strong><br>
+      Yes. All core features work without an internet connection.</p>
+    <p><strong>Is my data synced?</strong><br>
+      If enabled, iCloud can sync basic session history across your devices.</p>
+  </section>
+
+  <section class="card">
+    <h2>Policies</h2>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> PomodoroFocus. All rights reserved. • <span class="muted">Last updated: 19 September 2025</span></p>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
