@@ -5,54 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PomodoroFocus — Support</title>
   <meta name="description" content="Official support page for PomodoroFocus — a simple, focused Pomodoro timer." />
+  <meta name="theme-color" content="#fbfbfc" />
   <link rel="canonical" href="https://chrisakash03.github.io/pomodorofocus-support/" />
-  <style>
-    :root { --pad: 22px; --radius: 14px; }
-    * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: var(--pad); line-height: 1.55; max-width: 860px; }
-    header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
-    .logo { width: 48px; height: 48px; border-radius: 12px; border: 1px solid #eee; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
-    .muted { color: #666; }
-    .card { border: 1px solid #e5e5e5; border-radius: var(--radius); padding: 16px 18px; margin: 16px 0; }
-    a { text-decoration: none; }
-    footer { margin-top: 24px; font-size: 0.95rem; color: #666; }
-    code { background: #fafafa; border: 1px solid #eee; padding: 0 6px; border-radius: 6px; }
-  </style>
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo" aria-hidden="true">⏱️</div>
-    <div>
-      <h1 style="margin:0;">PomodoroFocus — Support</h1>
-      <div class="muted">Version: 1.0 • Platform: iOS</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="app-icon" data-role="brand-logo" aria-hidden="true">⏱</span>
+        <span>
+          <span class="site-title">PomodoroFocus Support</span><br>
+          <span class="site-subtle">Version 1.0 • iOS</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <button class="theme-toggle" data-action="toggle-theme" type="button" aria-label="Toggle color theme">
+          <span data-role="theme-toggle-icon" aria-hidden="true"></span>
+          <span data-role="theme-toggle-label">Theme</span>
+        </button>
+      </nav>
     </div>
   </header>
 
-  <section class="card">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:chrisakashh@gmail.com">chrisakashh@gmail.com</a>.</p>
-    <p>Response target: within 2–3 business days.</p>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>How can we help?</h1>
+        <p>Quick answers, direct contact, and policies for PomodoroFocus — a minimal, focused Pomodoro timer.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:chrisakashh@gmail.com">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v0 12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 3.25-6.88 5.17a2 2 0 0 1-2.44 0L3.4 7.25a.75.75 0 1 1 .9-1.2L11 10.7a.5.5 0 0 0 .6 0l6.7-4.65a.75.75 0 1 1 .9 1.2Z"/></svg>
+            Email Support
+          </a>
+          <a class="btn btn-soft" href="#faq">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10.013 10.013 0 0 0 12 2Zm1 17h-2v-2h2Zm2.07-7.75-.9.92A3.493 3.493 0 0 0 13 15h-2v-.5a4.5 4.5 0 0 1 1.32-3.18l1.24-1.26A1.75 1.75 0 1 0 10.5 8H9a3.25 3.25 0 1 1 6.07 1.25Z"/></svg>
+            Read FAQ
+          </a>
+          <a class="btn" href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2 style="margin-bottom:6px;">Contact</h2>
+        <p>Email us at <a href="mailto:chrisakashh@gmail.com">chrisakashh@gmail.com</a>.</p>
+        <p class="site-subtle">Response target: within 2–3 business days.</p>
+      </div>
+    </section>
 
-  <section class="card">
-    <h2>FAQ</h2>
-    <p><strong>How do I report a bug?</strong><br>
-      In the app, go to Settings → “Send Feedback,” or email us with steps to reproduce and your iOS version.</p>
-    <p><strong>Does PomodoroFocus work offline?</strong><br>
-      Yes. All core features work without an internet connection.</p>
-    <p><strong>Is my data synced?</strong><br>
-      If enabled, iCloud can sync basic session history across your devices.</p>
-  </section>
+    <section class="section" id="faq">
+      <h2>FAQ</h2>
+      <div class="grid">
+        <details>
+          <summary>
+            <svg class="chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6Z"/></svg>
+            How do I report a bug?
+          </summary>
+          <div class="faq-body">
+            In the app, go to Settings → <em>Send Feedback</em>, or email us with steps to reproduce and your iOS version.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <svg class="chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6Z"/></svg>
+            Does PomodoroFocus work offline?
+          </summary>
+          <div class="faq-body">
+            Yes. All core features work without an internet connection.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <svg class="chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6Z"/></svg>
+            Is my data synced?
+          </summary>
+          <div class="faq-body">
+            If enabled, iCloud can sync basic session history across your devices.
+          </div>
+        </details>
+      </div>
+    </section>
 
-  <section class="card">
-    <h2>Policies</h2>
-    <p><a href="privacy.html">Privacy Policy</a></p>
-  </section>
+    <section class="section">
+      <div class="card">
+        <h2>Policies</h2>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <p>© <span id="y"></span> PomodoroFocus. All rights reserved. • <span class="muted">Last updated: 19 September 2025</span></p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> PomodoroFocus. All rights reserved. • <span class="site-subtle">Last updated: 19 September 2025</span></p>
+    </div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="main.js" defer></script>
 </body>
 </html>

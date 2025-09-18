@@ -5,41 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PomodoroFocus — Privacy Policy</title>
   <meta name="description" content="Privacy Policy for PomodoroFocus." />
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 22px; line-height: 1.65; max-width: 860px; }
-    a { text-decoration: none; }
-    h1 { margin-bottom: 0; }
-    .muted { color: #666; }
-  </style>
+  <meta name="theme-color" content="#fbfbfc" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="muted"><em>Last updated: 19 September 2025</em></p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="app-icon" data-role="brand-logo" aria-hidden="true">⏱</span>
+        <span>
+          <span class="site-title">PomodoroFocus Support</span><br>
+          <span class="site-subtle">Policies</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <button class="theme-toggle" data-action="toggle-theme" type="button" aria-label="Toggle color theme">
+          <span data-role="theme-toggle-icon" aria-hidden="true"></span>
+          <span data-role="theme-toggle-label">Theme</span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-  <p><strong>PomodoroFocus</strong> (“we”, “us”) respects your privacy. This policy explains what data we collect and how we use it.</p>
+  <main class="container">
+    <article class="card">
+      <h1 style="margin-bottom:6px;">Privacy Policy</h1>
+      <p class="site-subtle"><em>Last updated: 19 September 2025</em></p>
 
-  <h2>Data We Collect</h2>
-  <ul>
-    <li><strong>App diagnostics</strong> (crash logs, performance data) to improve stability.</li>
-    <li><strong>Usage analytics</strong> (e.g. sessions, feature usage) to guide improvements, if enabled.</li>
-  </ul>
-  <p>We do <strong>not</strong> collect sensitive personal data unless explicitly provided by you (e.g., when you email support).</p>
+      <p><strong>PomodoroFocus</strong> (“we”, “us”) respects your privacy. This policy explains what data we collect and how we use it.</p>
 
-  <h2>How We Use Data</h2>
-  <ul>
-    <li>Maintain and improve app functionality.</li>
-    <li>Respond to support inquiries.</li>
-  </ul>
+      <h2>Data We Collect</h2>
+      <ul>
+        <li><strong>App diagnostics</strong> (crash logs, performance data) to improve stability.</li>
+        <li><strong>Usage analytics</strong> (e.g. sessions, feature usage) to guide improvements, if enabled.</li>
+      </ul>
+      <p>We do <strong>not</strong> collect sensitive personal data unless explicitly provided by you (e.g., when you email support).</p>
 
-  <h2>Sharing</h2>
-  <p>We do not sell your data. Limited sharing may occur with service providers (e.g., analytics or crash reporting) bound by confidentiality and data-processing terms.</p>
+      <h2>How We Use Data</h2>
+      <ul>
+        <li>Maintain and improve app functionality.</li>
+        <li>Respond to support inquiries.</li>
+      </ul>
 
-  <h2>Your Choices</h2>
-  <p>You can disable analytics in the app settings (if provided). You may request deletion of support emails you have sent us.</p>
+      <h2>Sharing</h2>
+      <p>We do not sell your data. Limited sharing may occur with service providers (e.g., analytics or crash reporting) bound by confidentiality and data-processing terms.</p>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:support@pomodorofocus.app">support@pomodorofocus.app</a></p>
+      <h2>Your Choices</h2>
+      <p>You can disable analytics in the app settings (if provided). You may request deletion of support emails you have sent us.</p>
 
-  <p><a href="index.html">← Back to Support</a></p>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:chrisakashh@gmail.com">chrisakashh@gmail.com</a></p>
+
+      <p style="margin-top:12px;"><a class="btn" href="index.html">← Back to Support</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> PomodoroFocus. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
